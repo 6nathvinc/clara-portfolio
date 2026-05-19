@@ -7,11 +7,11 @@ REMOTE_PATH="/home/nathouworks/projects/clara-portfolio/site/"
 
 echo "Déploiement en cours vers $REMOTE_HOST..."
 
-rsync -avz --progress//
-	--exclude '.git' \
-	--exclude '.gitignore' \
-	--exclude 'deploy.sh' \
-	--exclude '.DS_Store' \
-	./ "$REMOTE_USER@REMOTE_HOST:$REMOTE_PATH"
+rsync -avz \
+  --exclude '.git' \
+  --exclude '.gitignore' \
+  --exclude 'deploy.sh' \
+  --exclude '.DS_Store' \
+  ./ "$REMOTE_USER@$REMOTE_HOST:$REMOTE_PATH"
 
-echo "Déploiement terminé"
+echo "Déploiement termine."
