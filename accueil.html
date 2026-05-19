@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clara Beltzung — Portfolio BUT Mesures Physiques</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { bg:'#F7F6F2', ink:'#181818', muted:'#6B6B6B', accent:'#1E3A5F', light:'#D6E4F0', tag:'#EEF4FB', border:'#DDD8CE' },
+          fontFamily: { display:['Fraunces','Georgia','serif'], body:['DM Sans','sans-serif'], mono:['DM Mono','monospace'] },
+        },
+      },
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+    body{background-color:#F7F6F2;font-family:'DM Sans',sans-serif;color:#181818}
+    .nav-link{font-family:'DM Mono',monospace;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#6B6B6B;transition:color .2s}
+    .nav-link:hover,.nav-link.active{color:#1E3A5F}
+    .section-label{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#1E3A5F}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+    .fade-up{animation:fadeUp .7s ease forwards}
+    .d1{animation-delay:.15s;opacity:0}.d2{animation-delay:.3s;opacity:0}
+    .d3{animation-delay:.45s;opacity:0}.d4{animation-delay:.6s;opacity:0}
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#F7F6F2]/95 backdrop-blur-sm border-b border-[#DDD8CE]">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="accueil.html" class="font-display text-[#181818] font-bold text-sm tracking-tight">Clara Beltzung</a>
+
+      <!-- Nav desktop -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="accueil.html#apropos" class="nav-link  active" style="color:#1E3A5F">À propos</a>
+        <a href="formation.html" class="nav-link">Formation</a>
+        <a href="competences.html" class="nav-link">Compétences</a>
+        <a href="saes.html" class="nav-link">SAÉ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="assets/cv-clara-beltzung.pdf" download class="hidden sm:block font-mono text-xs tracking-widest uppercase bg-[#1E3A5F] text-white px-4 py-2 hover:bg-[#181818] transition-colors" style="font-family:'DM Mono',monospace">CV</a>
+        <!-- Burger -->
+        <button id="burger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+          <span class="w-6 h-0.5 bg-[#181818] transition-all" id="b1"></span>
+          <span class="w-6 h-0.5 bg-[#181818] transition-all" id="b2"></span>
+          <span class="w-6 h-0.5 bg-[#181818] transition-all" id="b3"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile overlay -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#DDD8CE] bg-[#F7F6F2]">
+      <div class="flex flex-col px-6 py-6 gap-5">
+        <a href="accueil.html#apropos" class="nav-link text-base" onclick="closeMenu()">À propos</a>
+        <a href="formation.html" class="nav-link text-base" onclick="closeMenu()">Formation</a>
+        <a href="competences.html" class="nav-link text-base" onclick="closeMenu()">Compétences</a>
+        <a href="saes.html" class="nav-link text-base" onclick="closeMenu()">SAÉ</a>
+        <a href="contact.html" class="nav-link text-base" onclick="closeMenu()">Contact</a>
+        <a href="assets/cv-clara-beltzung.pdf" download class="font-mono text-xs tracking-widest uppercase bg-[#1E3A5F] text-white px-4 py-3 text-center hover:bg-[#181818] transition-colors mt-2" style="font-family:'DM Mono',monospace">Télécharger le CV</a>
+      </div>
+    </div>
+  </nav>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobile-menu');
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    function closeMenu() { menu.classList.add('hidden'); }
+  </script>
+
+
+  <!-- ═══════════════════════════════════════
+       HERO — pleine hauteur écran
+  ═══════════════════════════════════════ -->
+  <section class="min-h-screen flex flex-col justify-center pt-20 px-6">
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="section-label fade-up mb-6">Portfolio · BUT Mesures Physiques</p>
+        <h1 class="font-display text-6xl md:text-8xl font-black leading-none text-[#181818] fade-up d1 mb-6">
+          Clara<br/>Beltzung
+        </h1>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed fade-up d2 mb-8 max-w-md">
+          Étudiante en première année de Bachelor Universitaire de Technologie
+          Mesures Physiques à l'IUT Nord Franche-Comté, rattaché à l'Université
+          Marie et Louis Pasteur.
+        </p>
+        <div class="fade-up d3 flex flex-wrap gap-3 mb-10">
+          <span class="font-mono text-xs bg-[#EEF4FB] text-[#1E3A5F] px-3 py-1.5" style="font-family:'DM Mono',monospace">Instrumentation</span>
+          <span class="font-mono text-xs bg-[#EEF4FB] text-[#1E3A5F] px-3 py-1.5" style="font-family:'DM Mono',monospace">Métrologie</span>
+          <span class="font-mono text-xs bg-[#EEF4FB] text-[#1E3A5F] px-3 py-1.5" style="font-family:'DM Mono',monospace">Physique appliquée</span>
+          <span class="font-mono text-xs bg-[#EEF4FB] text-[#1E3A5F] px-3 py-1.5" style="font-family:'DM Mono',monospace">Parcours TI visé</span>
+        </div>
+        <div class="fade-up d4 flex items-center gap-6">
+          <a href="competences.html" class="font-mono text-xs tracking-widest uppercase text-[#1E3A5F] border border-[#1E3A5F] px-5 py-2.5 hover:bg-[#1E3A5F] hover:text-white transition-all" style="font-family:'DM Mono',monospace">
+            Voir mes compétences
+          </a>
+          <a href="index.html#apropos" class="font-mono text-xs tracking-widest uppercase text-[#6B6B6B] hover:text-[#181818] transition-colors" style="font-family:'DM Mono',monospace">
+            En savoir plus ↓
+          </a>
+        </div>
+      </div>
+
+      <!-- Photo -->
+      <div class="relative flex justify-center items-center">
+        <div class="w-72 h-72 md:w-96 md:h-96 border-2 border-[#1E3A5F]/20 rounded-full flex items-center justify-center relative">
+          <div class="absolute inset-6 border border-[#1E3A5F]/10 rounded-full"></div>
+          <div class="w-48 h-48 md:w-64 md:h-64 bg-[#D6E4F0] rounded-full flex items-center justify-center overflow-hidden">
+            <!-- Remplacer par : <img src="assets/photo-clara.jpg" alt="Clara Beltzung" class="w-full h-full object-cover" /> -->
+            <p class="font-mono text-xs text-[#1E3A5F] text-center px-4" style="font-family:'DM Mono',monospace">Photo de Clara<br/>(à ajouter)</p>
+          </div>
+          <span class="absolute top-4 right-4 font-mono text-[10px] text-[#6B6B6B] bg-[#F7F6F2] px-2 py-1 border border-[#DDD8CE]" style="font-family:'DM Mono',monospace">S1 · S2</span>
+          <span class="absolute bottom-4 left-4 font-mono text-[10px] text-[#6B6B6B] bg-[#F7F6F2] px-2 py-1 border border-[#DDD8CE]" style="font-family:'DM Mono',monospace">2024 — 2025</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicateur de scroll -->
+    <div class="flex justify-center pb-8 mt-auto">
+      <a href="index.html#apropos" class="flex flex-col items-center gap-2 text-[#6B6B6B] animate-bounce">
+        <span class="font-mono text-xs" style="font-family:'DM Mono',monospace">À propos</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3v10M3 8l5 5 5-5" stroke="#6B6B6B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       À PROPOS — arrivée au scroll
+  ═══════════════════════════════════════ -->
+  <section id="apropos" class="min-h-screen flex items-center py-24 px-6 border-t border-[#DDD8CE]">
+    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-12 items-start">
+
+      <!-- Colonne gauche : étiquette + titre -->
+      <div class="md:col-span-4">
+        <p class="section-label mb-6">À propos</p>
+        <h2 class="font-display text-4xl font-bold text-[#181818] leading-tight mb-8">
+          Qui<br/>suis-je ?
+        </h2>
+
+        <!-- Infos clés -->
+        <div class="space-y-4 border-t border-[#DDD8CE] pt-6">
+          <div>
+            <p class="font-mono text-xs text-[#6B6B6B] mb-1" style="font-family:'DM Mono',monospace">Formation</p>
+            <p class="text-sm text-[#181818]">BUT Mesures Physiques — 1ère année</p>
+          </div>
+          <div>
+            <p class="font-mono text-xs text-[#6B6B6B] mb-1" style="font-family:'DM Mono',monospace">Établissement</p>
+            <p class="text-sm text-[#181818]">IUT Nord Franche-Comté, Belfort</p>
+          </div>
+          <div>
+            <p class="font-mono text-xs text-[#6B6B6B] mb-1" style="font-family:'DM Mono',monospace">Parcours visé</p>
+            <p class="text-sm text-[#181818]">Techniques d'Instrumentation</p>
+          </div>
+          <div>
+            <p class="font-mono text-xs text-[#6B6B6B] mb-1" style="font-family:'DM Mono',monospace">Année</p>
+            <p class="text-sm text-[#181818]">2024 — 2025</p>
+          </div>
+        </div>
+
+        <a href="contact.html" class="inline-block mt-8 font-mono text-xs tracking-widest uppercase text-[#1E3A5F] border border-[#1E3A5F] px-5 py-2.5 hover:bg-[#1E3A5F] hover:text-white transition-all" style="font-family:'DM Mono',monospace">
+          Me contacter
+        </a>
+      </div>
+
+      <!-- Colonne droite : texte de présentation -->
+      <div class="md:col-span-8">
+
+        <!--
+          ╔══════════════════════════════════════════════════════════════════╗
+          ║  ZONE À REMPLIR PAR CLARA                                       ║
+          ║  Voir le guide de rédaction fourni séparément                   ║
+          ╚══════════════════════════════════════════════════════════════════╝
+        -->
+
+        <p class="font-display text-2xl italic text-[#181818] leading-relaxed mb-8">
+          <!-- Phrase d'accroche personnelle de Clara — 1 à 2 phrases max.
+               Exemple de structure : "Attirée par [domaine] depuis [contexte],
+               j'ai choisi le BUT Mesures Physiques pour [raison concrète]."
+               À remplacer. -->
+          "Passionnée par la physique et les sciences de la mesure depuis le lycée,
+          j'ai choisi le BUT Mesures Physiques pour mettre en pratique mes connaissances
+          dans un contexte industriel et de laboratoire."
+        </p>
+
+        <div class="space-y-5 text-[#6B6B6B] leading-relaxed">
+          <p>
+            <!-- Paragraphe 1 : qui elle est, d'où elle vient, ce qui l'a attirée dans ce domaine.
+                 Concret, une anecdote ou un exemple si possible. -->
+            [À remplir par Clara — Paragraphe de présentation personnelle :
+            ville d'origine ou de résidence, baccalauréat obtenu, ce qui l'a poussée
+            vers les mesures physiques et l'instrumentation. Être concrète et personnelle,
+            pas de formules génériques.]
+          </p>
+          <p>
+            <!-- Paragraphe 2 : ce qu'elle aime dans la formation, ce qu'elle y apprend,
+                 ce qui l'enthousiasme. Mentionner des matières ou des TP concrets. -->
+            [À remplir — Ce que Clara aime dans sa formation : quels cours, quels travaux
+            pratiques, quelles découvertes l'ont particulièrement intéressée jusqu'ici.
+            Montrer qu'elle est investie.]
+          </p>
+          <p>
+            <!-- Paragraphe 3 : projets professionnels après le BUT.
+                 La prof précise que le recruteur peut être intéressé par quelqu'un
+                 qui veut travailler directement ou faire une alternance après le BUT. -->
+            [À remplir — Projets après le BUT : Clara souhaite-t-elle travailler
+            directement, poursuivre en licence professionnelle ou école d'ingénieurs,
+            faire une alternance ? Être précise sur le secteur visé si elle le sait.]
+          </p>
+        </div>
+
+        <!-- Photo IUT -->
+        <div class="mt-10 p-4 border border-[#DDD8CE] bg-[#EEF4FB] flex items-center gap-3">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1E3A5F" stroke-width="1.2"/><path d="M8 7v4M8 5v.5" stroke="#1E3A5F" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <p class="font-mono text-xs text-[#1E3A5F]" style="font-family:'DM Mono',monospace">
+            Photo disponible dans la photothèque de l'IUT NFC :
+            <a href="https://www.iut-nfc.univ-fcomte.fr/photheque-iut-nfc/" target="_blank" class="underline">iut-nfc.univ-fcomte.fr/photheque-iut-nfc</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[#DDD8CE] py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">
+        © 2025 Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté
+      </p>
+      <div class="flex items-center gap-6">
+        <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">Université Marie et Louis Pasteur</p>
+        <a href="mentions-legales.html" class="font-mono text-xs text-[#6B6B6B] hover:text-[#1E3A5F] underline" style="font-family:'DM Mono',monospace">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
