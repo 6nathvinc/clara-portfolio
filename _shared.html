@@ -1,0 +1,45 @@
+<!-- HEAD PARTAGÉ — copier dans chaque page -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg:     '#F7F6F2',
+          ink:    '#181818',
+          muted:  '#6B6B6B',
+          accent: '#1E3A5F',
+          light:  '#D6E4F0',
+          tag:    '#EEF4FB',
+          border: '#DDD8CE',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'Georgia', 'serif'],
+          body:    ['DM Sans', 'sans-serif'],
+          mono:    ['DM Mono', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #F7F6F2; font-family: 'DM Sans', sans-serif; color: #181818; }
+  .nav-link { font-family:'DM Mono',monospace; font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:#6B6B6B; transition:color .2s; }
+  .nav-link:hover, .nav-link.active { color:#1E3A5F; }
+  .section-label { font-family:'DM Mono',monospace; font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:#1E3A5F; }
+  .comp-card { border:1px solid #DDD8CE; transition:all .25s ease; }
+  .comp-card:hover { border-color:#1E3A5F; background-color:#1E3A5F; color:white; }
+  .comp-card:hover .comp-sub, .comp-card:hover .comp-desc, .comp-card:hover .comp-arrow { color:#D6E4F0; }
+  .sae-card { border-left:3px solid #1E3A5F; transition:background .2s; }
+  .sae-card:hover { background:#EEF4FB; }
+  @keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+  .fade-up { animation:fadeUp .7s ease forwards; }
+  .d1{animation-delay:.15s;opacity:0} .d2{animation-delay:.3s;opacity:0}
+  .d3{animation-delay:.45s;opacity:0} .d4{animation-delay:.6s;opacity:0}
+</style>

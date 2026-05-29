@@ -52,6 +52,8 @@
 
     /* Valorant kill-feed strip */
     .killfeed { background: rgba(24,24,24,.82); backdrop-filter: blur(4px) }
+    p { line-height: 1.85; text-align: justify; }
+    li { line-height: 1.8; }
   </style>
   <script src="assets/cursor.js" defer></script>
   <script src="assets/transitions.js" defer></script>
@@ -251,7 +253,7 @@
 
   <footer class="border-t border-[#DDD8CE] py-8 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">© 2025 Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté</p>
+      <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace"><span id="footer-year"></span> Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté</p>
       <div class="flex items-center gap-6">
         <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">Université Marie et Louis Pasteur</p>
         <a href="mentions-legales.html" class="font-mono text-xs text-[#6B6B6B] hover:text-[#1E3A5F] underline" style="font-family:'DM Mono',monospace">Mentions légales</a>
@@ -259,5 +261,6 @@
     </div>
   </footer>
 
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

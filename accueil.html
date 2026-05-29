@@ -28,6 +28,8 @@
     .fade-up{animation:fadeUp .7s ease forwards}
     .d1{animation-delay:.15s;opacity:0}.d2{animation-delay:.3s;opacity:0}
     .d3{animation-delay:.45s;opacity:0}.d4{animation-delay:.6s;opacity:0}
+    p { line-height: 1.85; text-align: justify; }
+    li { line-height: 1.8; }
   </style>
 </head>
 <body>
@@ -83,7 +85,7 @@
        HERO — pleine hauteur écran
   ═══════════════════════════════════════ -->
   <section class="min-h-screen flex flex-col justify-center pt-20 px-6">
-    <div class="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-16 items-center">
+    <div class="max-w-2xl mx-auto w-full">
 
       <div>
         <p class="section-label fade-up mb-6">Portfolio · BUT Mesures Physiques</p>
@@ -105,24 +107,17 @@
           <a href="competences.html" class="font-mono text-xs tracking-widest uppercase text-[#1E3A5F] border border-[#1E3A5F] px-5 py-2.5 hover:bg-[#1E3A5F] hover:text-white transition-all" style="font-family:'DM Mono',monospace">
             Voir mes compétences
           </a>
-          <a href="index.html#apropos" class="font-mono text-xs tracking-widest uppercase text-[#6B6B6B] hover:text-[#181818] transition-colors" style="font-family:'DM Mono',monospace">
-            En savoir plus ↓
+          <a href="saes.html" class="font-mono text-xs tracking-widest uppercase text-[#6B6B6B] hover:text-[#181818] transition-colors" style="font-family:'DM Mono',monospace">
+            Voir les SAÉ ↓
           </a>
+        </div>
+
+        <div class="mt-6 pt-6 border-t border-[#DDD8CE] flex items-center gap-3">
+          <span class="font-display text-2xl font-black text-[#1E3A5F]" data-counter="6">6</span>
+          <span class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">SAÉ réalisées · S1 &amp; S2</span>
         </div>
       </div>
 
-      <!-- Photo -->
-      <div class="relative flex justify-center items-center">
-        <div class="w-72 h-72 md:w-96 md:h-96 border-2 border-[#1E3A5F]/20 rounded-full flex items-center justify-center relative">
-          <div class="absolute inset-6 border border-[#1E3A5F]/10 rounded-full"></div>
-          <div class="w-48 h-48 md:w-64 md:h-64 bg-[#D6E4F0] rounded-full flex items-center justify-center overflow-hidden">
-            <!-- Remplacer par : <img src="assets/photo-clara.jpg" alt="Clara Beltzung" class="w-full h-full object-cover" /> -->
-            <p class="font-mono text-xs text-[#1E3A5F] text-center px-4" style="font-family:'DM Mono',monospace">Photo de Clara<br/>(à ajouter)</p>
-          </div>
-          <span class="absolute top-4 right-4 font-mono text-[10px] text-[#6B6B6B] bg-[#F7F6F2] px-2 py-1 border border-[#DDD8CE]" style="font-family:'DM Mono',monospace">S1 · S2</span>
-          <span class="absolute bottom-4 left-4 font-mono text-[10px] text-[#6B6B6B] bg-[#F7F6F2] px-2 py-1 border border-[#DDD8CE]" style="font-family:'DM Mono',monospace">2024 — 2025</span>
-        </div>
-      </div>
 
     </div>
 
@@ -139,7 +134,7 @@
   <!-- ═══════════════════════════════════════
        À PROPOS — arrivée au scroll
   ═══════════════════════════════════════ -->
-  <section id="apropos" class="min-h-screen flex items-center py-24 px-6 border-t border-[#DDD8CE]">
+  <section id="apropos" class="min-h-screen flex items-center py-32 px-6 border-t border-[#DDD8CE]">
     <div class="max-w-6xl mx-auto w-full grid md:grid-cols-12 gap-12 items-start">
 
       <!-- Colonne gauche : étiquette + titre -->
@@ -177,57 +172,16 @@
       <!-- Colonne droite : texte de présentation -->
       <div class="md:col-span-8">
 
-        <!--
-          ╔══════════════════════════════════════════════════════════════════╗
-          ║  ZONE À REMPLIR PAR CLARA                                       ║
-          ║  Voir le guide de rédaction fourni séparément                   ║
-          ╚══════════════════════════════════════════════════════════════════╝
-        -->
-
         <p class="font-display text-2xl italic text-[#181818] leading-relaxed mb-8">
-          <!-- Phrase d'accroche personnelle de Clara — 1 à 2 phrases max.
-               Exemple de structure : "Attirée par [domaine] depuis [contexte],
-               j'ai choisi le BUT Mesures Physiques pour [raison concrète]."
-               À remplacer. -->
-          "Passionnée par la physique et les sciences de la mesure depuis le lycée,
-          j'ai choisi le BUT Mesures Physiques pour mettre en pratique mes connaissances
-          dans un contexte industriel et de laboratoire."
+          "La physique, c'est comprendre le monde à travers ce qu'on peut mesurer. C'est ce qui m'a amenée vers cette formation, et ce qui me donne envie d'en faire mon métier."
         </p>
 
-        <div class="space-y-5 text-[#6B6B6B] leading-relaxed">
-          <p>
-            <!-- Paragraphe 1 : qui elle est, d'où elle vient, ce qui l'a attirée dans ce domaine.
-                 Concret, une anecdote ou un exemple si possible. -->
-            [À remplir par Clara — Paragraphe de présentation personnelle :
-            ville d'origine ou de résidence, baccalauréat obtenu, ce qui l'a poussée
-            vers les mesures physiques et l'instrumentation. Être concrète et personnelle,
-            pas de formules génériques.]
-          </p>
-          <p>
-            <!-- Paragraphe 2 : ce qu'elle aime dans la formation, ce qu'elle y apprend,
-                 ce qui l'enthousiasme. Mentionner des matières ou des TP concrets. -->
-            [À remplir — Ce que Clara aime dans sa formation : quels cours, quels travaux
-            pratiques, quelles découvertes l'ont particulièrement intéressée jusqu'ici.
-            Montrer qu'elle est investie.]
-          </p>
-          <p>
-            <!-- Paragraphe 3 : projets professionnels après le BUT.
-                 La prof précise que le recruteur peut être intéressé par quelqu'un
-                 qui veut travailler directement ou faire une alternance après le BUT. -->
-            [À remplir — Projets après le BUT : Clara souhaite-t-elle travailler
-            directement, poursuivre en licence professionnelle ou école d'ingénieurs,
-            faire une alternance ? Être précise sur le secteur visé si elle le sait.]
-          </p>
+        <div class="space-y-8 text-[#6B6B6B] leading-relaxed">
+          <p>Je m'appelle Clara Beltzung, j'ai eu mon bac technologique au lycée Sainte-Marie avec les spécialités de la filière STL. J'ai toujours bien aimé les matières scientifiques, surtout la physique parce que j'aime comprendre comment les choses fonctionnent concrètement. Après le lycée, j'ai choisi le BUT Mesures Physiques parce que c'est une formation assez variée avec à la fois de la théorie et beaucoup de pratique.</p>
+          <p>Ce que j'aime dans la formation, c'est surtout le côté concret des cours et des TP. J'ai particulièrement aimé le cours de métrologie parce qu'on a fait beaucoup de manipulations pour comprendre le cours. Un TP qui m'a marqué était celui sur les matériaux, car on devait utiliser plusieurs appareils de mesure et analyser nos résultats comme dans un vrai labo.</p>
+          <p>Après le BUT Mesures Physiques, je pense plutôt entrer directement dans le monde du travail. J'aimerais travailler dans un environnement technique où je pourrais continuer à apprendre sur le terrain, en mettant à profit mes compétences en mesures, instrumentation et analyse.</p>
         </div>
 
-        <!-- Photo IUT -->
-        <div class="mt-10 p-4 border border-[#DDD8CE] bg-[#EEF4FB] flex items-center gap-3">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#1E3A5F" stroke-width="1.2"/><path d="M8 7v4M8 5v.5" stroke="#1E3A5F" stroke-width="1.2" stroke-linecap="round"/></svg>
-          <p class="font-mono text-xs text-[#1E3A5F]" style="font-family:'DM Mono',monospace">
-            Photo disponible dans la photothèque de l'IUT NFC :
-            <a href="https://www.iut-nfc.univ-fcomte.fr/photheque-iut-nfc/" target="_blank" class="underline">iut-nfc.univ-fcomte.fr/photheque-iut-nfc</a>
-          </p>
-        </div>
 
       </div>
     </div>
@@ -238,7 +192,7 @@
   <footer class="border-t border-[#DDD8CE] py-8 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">
-        © 2025 Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté
+        <span id="footer-year"></span> Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté
       </p>
       <div class="flex items-center gap-6">
         <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">Université Marie et Louis Pasteur</p>
@@ -248,5 +202,6 @@
   </footer>
 
   <script src="assets/cursor.js" defer></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

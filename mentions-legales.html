@@ -12,7 +12,8 @@
     .nav-link:hover{color:#1E3A5F}
     .section-label{font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#1E3A5F}
     h2{font-family:'Fraunces',Georgia,serif;font-size:1.25rem;font-weight:700;color:#181818;margin-bottom:.75rem;margin-top:2rem}
-    p,li{color:#6B6B6B;font-size:.9rem;line-height:1.8}
+    p{color:#6B6B6B;font-size:.9rem;line-height:1.85;text-align:justify}
+    li{color:#6B6B6B;font-size:.9rem;line-height:1.8;text-align:justify}
     strong{color:#181818}
   </style>
 </head>
@@ -36,68 +37,123 @@
     <div class="max-w-3xl mx-auto">
 
       <p class="section-label mb-4">Informations légales</p>
-      <h1 class="font-display text-4xl font-black text-[#181818] mb-12">Mentions légales</h1>
+      <h1 class="font-display text-4xl font-black text-[#181818] mb-16">Mentions légales</h1>
 
       <!-- Éditeur -->
-      <h2>Éditeur du site</h2>
-      <p>
-        Ce site est un portfolio personnel édité par :<br/>
-        <strong>Clara Beltzung</strong><br/>
-        Étudiante en BUT Mesures Physiques<br/>
-        IUT Nord Franche-Comté, Université Marie et Louis Pasteur<br/>
-        [Adresse e-mail — à remplir]
-      </p>
+      <div class="mb-10 pb-10 border-b border-[#DDD8CE]">
+        <h2>Éditeur du site</h2>
+        <p>
+          Ce site est un portfolio personnel édité par :<br/>
+          <strong>Clara Beltzung</strong><br/>
+          Étudiante en BUT Mesures Physiques<br/>
+          IUT Nord Franche-Comté, Université Marie et Louis Pasteur<br/>
+          clara.beltzung@edu.univ-fcomte.fr
+        </p>
+      </div>
 
       <!-- Hébergement -->
-      <h2>Hébergement</h2>
-      <p>
-        Ce site est hébergé sur un serveur privé virtuel (VPS) administré par :<br/><br/>
-        <strong>NathouWorks</strong><br/>
-        Infrastructure auto-hébergée · <a href="https://nathouworks.fr" class="text-[#1E3A5F] underline">nathouworks.fr</a><br/>
-        Serveur VPS OVHcloud · Datacenter de Gravelines, France<br/><br/>
-        Conception et administration technique : <strong>Nathan [NOM — à remplir]</strong><br/>
-        Contact infrastructure : <a href="https://nathouworks.fr" class="text-[#1E3A5F] underline">nathouworks.fr</a>
-      </p>
+      <div class="mb-10 pb-10 border-b border-[#DDD8CE]">
+        <h2>Hébergement</h2>
+        <p>
+          Ce site est hébergé sur une infrastructure auto-hébergée propulsée par NathouWorks.<br/>
+          Conception et administration technique : <strong>Nathanaël Vincent</strong><br/>
+          <a href="https://nathouworks.fr" class="text-[#1E3A5F] underline">nathouworks.fr</a>
+        </p>
+      </div>
 
       <!-- Propriété intellectuelle -->
-      <h2>Propriété intellectuelle</h2>
-      <p>
-        L'ensemble du contenu de ce site (textes, photographies, documents) est la propriété
-        exclusive de Clara Beltzung, sauf mention contraire. Toute reproduction, même partielle,
-        est interdite sans autorisation préalable.
-      </p>
-      <p>
-        Les documents académiques (référentiel de compétences, grilles d'évaluation)
-        appartiennent à leurs auteurs respectifs (Ministère de l'Enseignement supérieur,
-        Université Marie et Louis Pasteur, IUT Nord Franche-Comté).
-      </p>
+      <div class="mb-10 pb-10 border-b border-[#DDD8CE]">
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          L'ensemble du contenu de ce site (textes, photographies, documents) est la propriété
+          exclusive de Clara Beltzung, sauf mention contraire. Toute reproduction, même partielle,
+          est interdite sans autorisation préalable.
+        </p>
+        <p>
+          Les documents académiques (référentiel de compétences, grilles d'évaluation)
+          appartiennent à leurs auteurs respectifs (Ministère de l'Enseignement supérieur,
+          Université Marie et Louis Pasteur, IUT Nord Franche-Comté).
+        </p>
+      </div>
 
       <!-- Données personnelles -->
-      <h2>Données personnelles</h2>
-      <p>
-        Ce site ne collecte aucune donnée personnelle automatiquement.
-        Aucun cookie de traçage, aucun formulaire de collecte de données n'est présent.
-        Les coordonnées affichées (email, téléphone) sont communiquées volontairement
-        par la personne contactant Clara Beltzung directement.
-      </p>
+      <div class="mb-10 pb-10 border-b border-[#DDD8CE]">
+        <h2>Données personnelles</h2>
+        <p>
+          Ce site ne collecte aucune donnée personnelle automatiquement.
+          Aucun cookie de traçage, aucun formulaire de collecte de données n'est présent.
+          Les coordonnées affichées (email, téléphone) sont communiquées volontairement
+          par la personne contactant Clara Beltzung directement.
+        </p>
+      </div>
 
       <!-- Crédits -->
-      <h2>Crédits techniques</h2>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>Conception graphique et développement : <strong>Nathan [NOM] · NathouWorks</strong></li>
-        <li>Typographies : Fraunces, DM Sans, DM Mono (Google Fonts, licence Open Font License)</li>
-        <li>Framework CSS : Tailwind CSS (MIT License)</li>
-        <li>Système de gestion de contenu : WordPress (GNU GPL)</li>
-        <li>Reverse proxy et certificats HTTPS : Caddy Server + Let's Encrypt</li>
-      </ul>
+      <div class="mb-10 pb-10 border-b border-[#DDD8CE]">
+        <h2>Crédits techniques</h2>
+        <div class="grid md:grid-cols-2 gap-4 mt-6">
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <div class="w-10 h-10 bg-[#1E3A5F] flex items-center justify-center flex-shrink-0">
+              <span class="font-mono font-bold text-base text-white">N</span>
+            </div>
+            <div>
+              <p class="text-sm font-medium text-[#181818]">Conception & développement</p>
+              <p class="text-xs text-[#6B6B6B]">Nathanaël Vincent · NathouWorks</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" width="32" height="32" alt="Tailwind CSS" class="flex-shrink-0" />
+            <div>
+              <p class="text-sm font-medium text-[#181818]">Tailwind CSS</p>
+              <p class="text-xs text-[#6B6B6B]">Framework CSS · MIT License</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="32" height="32" alt="JavaScript" class="flex-shrink-0" />
+            <div>
+              <p class="text-sm font-medium text-[#181818]">JavaScript</p>
+              <p class="text-xs text-[#6B6B6B]">Curseur custom, transitions, compteurs animés</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <img src="https://cdn.simpleicons.org/html5/E34F26" width="32" height="32" alt="HTML5" class="flex-shrink-0" />
+            <div>
+              <p class="text-sm font-medium text-[#181818]">HTML5</p>
+              <p class="text-xs text-[#6B6B6B]">Structure et contenu du site</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <img src="https://cdn.simpleicons.org/caddy/1F88C0" width="32" height="32" alt="Caddy Server" class="flex-shrink-0" />
+            <div>
+              <p class="text-sm font-medium text-[#181818]">Caddy Server</p>
+              <p class="text-xs text-[#6B6B6B]">Reverse proxy · HTTPS automatique Let's Encrypt</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4 p-5 border border-[#DDD8CE] bg-[#F7F6F2]">
+            <img src="https://cdn.simpleicons.org/googlefonts/4285F4" width="32" height="32" alt="Google Fonts" class="flex-shrink-0" />
+            <div>
+              <p class="text-sm font-medium text-[#181818]">Google Fonts</p>
+              <p class="text-xs text-[#6B6B6B]">Fraunces · DM Sans · DM Mono · Open Font License</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Responsabilité -->
-      <h2>Limitation de responsabilité</h2>
-      <p>
-        Clara Beltzung s'efforce de maintenir les informations de ce site à jour.
-        Elle ne saurait être tenue responsable des erreurs ou omissions éventuelles,
-        ni des dommages directs ou indirects résultant de l'utilisation de ce site.
-      </p>
+      <div class="mb-10">
+        <h2>Limitation de responsabilité</h2>
+        <p>
+          Clara Beltzung s'efforce de maintenir les informations de ce site à jour.
+          Elle ne saurait être tenue responsable des erreurs ou omissions éventuelles,
+          ni des dommages directs ou indirects résultant de l'utilisation de ce site.
+        </p>
+      </div>
 
       <div class="mt-12 pt-8 border-t border-[#DDD8CE]">
         <a href="accueil.html" class="font-mono text-xs tracking-widest uppercase text-[#1E3A5F] border border-[#1E3A5F] px-5 py-2.5 hover:bg-[#1E3A5F] hover:text-white transition-all inline-block" style="font-family:'DM Mono',monospace">
@@ -110,11 +166,12 @@
 
   <footer class="border-t border-[#DDD8CE] py-8 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">© 2025 Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté</p>
+      <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace"><span id="footer-year"></span> Clara Beltzung · BUT Mesures Physiques · IUT Nord Franche-Comté</p>
       <p class="font-mono text-xs text-[#6B6B6B]" style="font-family:'DM Mono',monospace">Hébergé par NathouWorks · nathouworks.fr</p>
     </div>
   </footer>
 
   <script src="assets/cursor.js" defer></script>
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
